@@ -19624,7 +19624,7 @@ define('collections/instaItem', [
         unbind: unbind
     };
     if (typeof define === 'function' && define.amd) {
-        define('../bower_components/eventie/eventie', [], eventie);
+        define('app/bower_components/eventie/eventie', [], eventie);
     } else if (typeof exports === 'object') {
         module.exports = eventie;
     } else {
@@ -19827,7 +19827,7 @@ define('collections/instaItem', [
         return EventEmitter;
     };
     if (typeof define === 'function' && define.amd) {
-        define('../bower_components/eventEmitter/EventEmitter', [], function () {
+        define('app/bower_components/eventEmitter/EventEmitter', [], function () {
             return EventEmitter;
         });
     } else if (typeof module === 'object' && module.exports) {
@@ -19857,7 +19857,7 @@ define('collections/instaItem', [
         }
     }
     if (typeof define === 'function' && define.amd) {
-        define('../bower_components/get-style-property/get-style-property', [], function () {
+        define('app/bower_components/get-style-property/get-style-property', [], function () {
             return getStyleProperty;
         });
     } else if (typeof exports === 'object') {
@@ -20011,7 +20011,7 @@ define('collections/instaItem', [
         return getSize;
     }
     if (typeof define === 'function' && define.amd) {
-        define('../bower_components/get-size/get-size', ['../bower_components/get-style-property/get-style-property'], defineGetSize);
+        define('app/bower_components/get-size/get-size', ['app/bower_components/get-style-property/get-style-property'], defineGetSize);
     } else if (typeof exports === 'object') {
         module.exports = defineGetSize(require('desandro-get-style-property'));
     } else {
@@ -20058,7 +20058,7 @@ define('collections/instaItem', [
         return docReady;
     }
     if (typeof define === 'function' && define.amd) {
-        define('../bower_components/doc-ready/doc-ready', ['../bower_components/eventie/eventie'], defineDocReady);
+        define('app/bower_components/doc-ready/doc-ready', ['app/bower_components/eventie/eventie'], defineDocReady);
     } else if (typeof exports === 'object') {
         module.exports = defineDocReady(require('eventie'));
     } else {
@@ -20121,7 +20121,7 @@ define('collections/instaItem', [
         matchesSelector = query;
     }
     if (typeof define === 'function' && define.amd) {
-        define('../bower_components/matches-selector/matches-selector', [], function () {
+        define('app/bower_components/matches-selector/matches-selector', [], function () {
             return matchesSelector;
         });
     } else if (typeof exports === 'object') {
@@ -20133,9 +20133,9 @@ define('collections/instaItem', [
 (function (window, factory) {
     'use strict';
     if (typeof define == 'function' && define.amd) {
-        define('../bower_components/fizzy-ui-utils/utils', [
-            '../bower_components/doc-ready/doc-ready',
-            '../bower_components/matches-selector/matches-selector'
+        define('app/bower_components/fizzy-ui-utils/utils', [
+            'app/bower_components/doc-ready/doc-ready',
+            'app/bower_components/matches-selector/matches-selector'
         ], function (docReady, matchesSelector) {
             return factory(window, docReady, matchesSelector);
         });
@@ -20296,11 +20296,11 @@ define('collections/instaItem', [
 (function (window, factory) {
     'use strict';
     if (typeof define === 'function' && define.amd) {
-        define('../bower_components/outlayer/item', [
-            '../bower_components/eventEmitter/EventEmitter',
-            '../bower_components/get-size/get-size',
-            '../bower_components/get-style-property/get-style-property',
-            '../bower_components/fizzy-ui-utils/utils'
+        define('app/bower_components/outlayer/item', [
+            'app/bower_components/eventEmitter/EventEmitter',
+            'app/bower_components/get-size/get-size',
+            'app/bower_components/get-style-property/get-style-property',
+            'app/bower_components/fizzy-ui-utils/utils'
         ], function (EventEmitter, getSize, getStyleProperty, utils) {
             return factory(window, EventEmitter, getSize, getStyleProperty, utils);
         });
@@ -20640,12 +20640,12 @@ define('collections/instaItem', [
 (function (window, factory) {
     'use strict';
     if (typeof define == 'function' && define.amd) {
-        define('../bower_components/outlayer/outlayer', [
-            '../bower_components/eventie/eventie',
-            '../bower_components/eventEmitter/EventEmitter',
-            '../bower_components/get-size/get-size',
-            '../bower_components/fizzy-ui-utils/utils',
-            '../bower_components/outlayer/item'
+        define('app/bower_components/outlayer/outlayer', [
+            'app/bower_components/eventie/eventie',
+            'app/bower_components/eventEmitter/EventEmitter',
+            'app/bower_components/get-size/get-size',
+            'app/bower_components/fizzy-ui-utils/utils',
+            'app/bower_components/outlayer/item'
         ], function (eventie, EventEmitter, getSize, utils, Item) {
             return factory(window, eventie, EventEmitter, getSize, utils, Item);
         });
@@ -21120,9 +21120,9 @@ define('collections/instaItem', [
     'use strict';
     if (typeof define === 'function' && define.amd) {
         define('masonry', [
-            '../bower_components/outlayer/outlayer',
-            '../bower_components/get-size/get-size',
-            '../bower_components/fizzy-ui-utils/utils'
+            'app/bower_components/outlayer/outlayer',
+            'app/bower_components/get-size/get-size',
+            'app/bower_components/fizzy-ui-utils/utils'
         ], factory);
     } else if (typeof exports === 'object') {
         module.exports = factory(require('outlayer'), require('get-size'), require('fizzy-ui-utils'));
@@ -21242,8 +21242,8 @@ define('collections/instaItem', [
         'use strict';
         if (typeof define === 'function' && define.amd) {
             define('imagesloaded', [
-                '../bower_components/eventEmitter/EventEmitter',
-                '../bower_components/eventie/eventie',
+                'app/bower_components/eventEmitter/EventEmitter',
+                'app/bower_components/eventie/eventie',
                 'jquery'
             ], function (EventEmitter, eventie) {
                 return factory(window, EventEmitter, eventie);
@@ -23282,17 +23282,17 @@ require.config({
         modernizr: '../bower_components/modernizr/modernizr',
         handlebars: '../bower_components/handlebars/handlebars',
         swiper: '../bower_components/swiper/dist/js/swiper',
-        imagesloaded: '../bower_components/imagesloaded/imagesloaded',
-        eventEmitter: '../bower_components/eventEmitter',
-        eventie: '../bower_components/eventie',
-        'jquery-bridget': '../bower_components/jquery-bridget/jquery.bridget',
-        masonry: '../bower_components/masonry/masonry',
         outlayer: '../bower_components/outlayer',
         'get-size': '../bower_components/get-size',
         'fizzy-ui-utils': '../bower_components/fizzy-ui-utils',
+        eventie: '../bower_components/eventie',
+        eventEmitter: '../bower_components/eventEmitter',
         'get-style-property': '../bower_components/get-style-property',
-        'matches-selector': '../bower_components/matches-selector',
         'doc-ready': '../bower_components/doc-ready',
+        'matches-selector': '../bower_components/matches-selector',
+        'jquery-bridget': '../bower_components/jquery-bridget/jquery.bridget',
+        imagesloaded: '../bower_components/imagesloaded/imagesloaded',
+        masonry: '../bower_components/masonry/masonry',
         instatag: './vendor/jquery-instatag/jquery.instatag'
     },
     packages: []
