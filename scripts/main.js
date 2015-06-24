@@ -15987,17 +15987,6 @@ define('templates', ['handlebars'], function (Handlebars) {
         },
         'useData': true
     });
-    this['JST']['banner'] = this['JST']['banner'] || {};
-    this['JST']['banner']['index'] = Handlebars.template({
-        'compiler': [
-            6,
-            '>= 2.0.0-beta.1'
-        ],
-        'main': function (depth0, helpers, partials, data) {
-            return '<ul class = "swiper-wrapper wrapper">\n    <li class = "swiper-slide banner-item-wrapper">\n        <div class = "banner-item">\n            <a href = \'#\'>\n                <img class = \'bg cover\' src = \'images/banner_01.jpg\'>\n                <img class = \'text cover\' src = \'images/banner_01_txt.png\'>\n            </a>\n        </div>\n    </li>\n    <li class = "swiper-slide banner-item-wrapper">\n        <div class = "banner-item">\n            <a href = \'#\'>\n                <img class = \'bg cover\' src = \'images/banner_01.jpg\'>\n                <img class = \'text cover\' src = \'images/banner_01_txt.png\'>\n            </a>\n        </div>\n    </li>\n    <li class = "swiper-slide banner-item-wrapper">\n        <div class = "banner-item">\n            <a href = \'#\'>\n                <img class = \'bg cover\' src = \'images/banner_01.jpg\'>\n                <img class = \'text cover\' src = \'images/banner_01_txt.png\'>\n            </a>\n        </div>\n    </li>\n</ul>';
-        },
-        'useData': true
-    });
     this['JST']['paper'] = this['JST']['paper'] || {};
     this['JST']['paper']['class'] = Handlebars.template({
         'compiler': [
@@ -16016,6 +16005,17 @@ define('templates', ['handlebars'], function (Handlebars) {
         ],
         'main': function (depth0, helpers, partials, data) {
             return '<div id = "news">\n    <ul class = "row">\n        <li class = \'item-wrapper col-xs-12 col-sm-4\'>\n            <a class = \'news-item\'>\n                <img class = \'bg cover\' src = \'images/news_01.jpg\'>\n                <div class = \'text-wrapper\'>\n                    <img class = \'text cover\' src = "images/news_01_txt.png">\n                </div>\n            </a>\n        </li>\n        <li class = \'item-wrapper col-xs-12 col-sm-4\'>\n            <a class = \'news-item\'>\n                <img class = \'bg cover\' src = \'images/news_02.jpg\'>\n                <div class = \'text-wrapper\'>\n                    <img class = \'text cover\' src = "images/news_02_txt.png">\n                </div>\n            </a>\n        </li>\n        <li class = \'item-wrapper col-xs-12 col-sm-4\'>\n            <a class = \'news-item\'>\n                <img class = \'bg cover\' src = \'images/news_03.jpg\'>\n                <div class = \'text-wrapper\'>\n                    <img class = \'text cover\' src = "images/news_03_txt.png">\n                </div>\n            </a>\n        </li>\n    </ul>\n</div>\n<div id = "hole">\n    <div class = \'hole-bg\'>\n        <img src = \'images/hole-bg.jpg\'>\n    </div>\n    <img class = \'hole-text\' src = "images/hole.png">\n</div>\n<div id = "bulletin">\n    <ul class = "row">\n        <li class = \'col-md-9 col-sm-9 col-xs-12\'>\n            <a class = \'bulletin-item\' style = "background-image:url(images/bulletin_001.jpg);">\n                <div class = \'text-wrapper\'>\n                    <img class = \'text cover\' src = "images/001_small.png">\n                </div>\n            </a>\n        </li>\n        <li class = \'col-md-3 col-sm-3 col-xs-6\'>\n            <a class = \'bulletin-item\' style = "background-image:url(images/bulletin_002.jpg);">\n                <div class = \'text-wrapper\'>\n                    <img class = \'text cover\' src = "images/002_small.png">\n                </div>\n            </a>\n        </li>\n        <li class = \'col-md-4 col-sm-4 col-xs-6\'>\n            <a class = \'bulletin-item\' style = "background-image:url(images/bulletin_003.jpg);">\n                <div class = \'text-wrapper\'>\n                    <img class = \'text cover\' src = "images/003_small.png">\n                </div>\n            </a>\n        </li>\n        <li class = \'col-md-4 col-sm-4 col-xs-6\'>\n            <a class = \'bulletin-item\' style = "background-image:url(images/bulletin_004.jpg);">\n                <div class = \'text-wrapper\'>\n                    <img class = \'text cover\' src = "images/004_small.png">\n                </div>\n            </a>\n        </li>\n        <li class = \'col-md-4 col-sm-4 col-xs-6\'>\n            <a class = \'bulletin-item\' style = "background-image:url(images/bulletin_005.jpg);">\n                <div class = \'text-wrapper\'>\n                    <img class = \'text cover\' src = "images/005_small.png">\n                </div>\n            </a>\n        </li>\n    </ul>\n</div>\n<div id = "insta">\n    <header class = \'insta-header\'>\n        <h2>#BEAN_BROTHERS</h2>\n    </header>\n    <!--<img class = \'loading\' src = \'images/loading.gif\'>-->\n</div>';
+        },
+        'useData': true
+    });
+    this['JST']['banner'] = this['JST']['banner'] || {};
+    this['JST']['banner']['index'] = Handlebars.template({
+        'compiler': [
+            6,
+            '>= 2.0.0-beta.1'
+        ],
+        'main': function (depth0, helpers, partials, data) {
+            return '<ul class = "swiper-wrapper wrapper">\n    <li class = "swiper-slide banner-item-wrapper">\n        <div class = "banner-item">\n            <a href = \'#\'>\n                <img class = \'bg cover\' src = \'images/banner_01.jpg\'>\n                <img class = \'text cover\' src = \'images/banner_01_txt.png\'>\n            </a>\n        </div>\n    </li>\n    <li class = "swiper-slide banner-item-wrapper">\n        <div class = "banner-item">\n            <a href = \'#\'>\n                <img class = \'bg cover\' src = \'images/banner_01.jpg\'>\n                <img class = \'text cover\' src = \'images/banner_01_txt.png\'>\n            </a>\n        </div>\n    </li>\n    <li class = "swiper-slide banner-item-wrapper">\n        <div class = "banner-item">\n            <a href = \'#\'>\n                <img class = \'bg cover\' src = \'images/banner_01.jpg\'>\n                <img class = \'text cover\' src = \'images/banner_01_txt.png\'>\n            </a>\n        </div>\n    </li>\n</ul>';
         },
         'useData': true
     });
@@ -23307,7 +23307,7 @@ require([
     if (history && history.pushState) {
         Backbone.history.start({
             pushState: true,
-            root: '/'
+            root: '/BB-web-demo'
         });
     }
     new Workspace();
