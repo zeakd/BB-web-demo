@@ -23307,7 +23307,7 @@ require([
     if (history && history.pushState) {
         Backbone.history.start({
             pushState: true,
-            root: '/BB-web-demo'
+            root: '/BB-web-demo/'
         });
     }
     new Workspace();
